@@ -1,0 +1,2663 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Microsoft 365 Copilot Business – licencje i wdrożenia dla firm | Valcreon</title>
+  <meta name="description" content="Microsoft 365 Copilot Business dla firm: licencje CSP w PLN, promocje, dodatki i bezpieczne wdrożenie dla MŚP. Umów konsultację lub napisz wiadomość." />
+    <link rel="icon" href="fav.ico">
+  <style>
+
+    
+    html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 64px; /* wysokość Twojego fixed header */
+    }
+
+    /* dodatkowo dla pewności */
+    section{
+    scroll-margin-top: 64px;
+    }
+
+
+    :root{
+      /* Copilot / Microsoft vibe */
+      --bg0:#070A11;
+      --bg1:#0B1224;      
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.08);
+      --line: rgba(255,255,255,.12);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.68);
+
+      /* Accent gradient */
+      --g1:#42E8E0; /* teal */
+      --g2:#5B8CFF; /* blue */
+      --g3:#B44CFF; /* purple */
+      --g4:#FF5CA8; /* pink */
+      --accent: linear-gradient(90deg,var(--g1),var(--g2),var(--g3),var(--g4));
+
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --shadow2: 0 12px 40px rgba(0,0,0,.35);
+      --radius: 22px;
+    }
+
+    main { padding-top: 64px; }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+
+    body{
+      margin:0;
+      color:var(--text);
+      font: 15px/1.55 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 700px at 15% 10%, rgba(66,232,224,.14), transparent 55%),
+        radial-gradient(1200px 700px at 85% 15%, rgba(91,140,255,.12), transparent 55%),
+        radial-gradient(900px 600px at 60% 85%, rgba(180,76,255,.12), transparent 58%),
+        linear-gradient(180deg,var(--bg0),var(--bg1));
+      overflow-x:hidden;
+    }
+
+    a{color:inherit}
+    .wrap{width:min(1140px,92vw); margin:0 auto;}
+
+    /* Topbar */
+    .topbar{
+      position:fixed; top:0; z-index:50;
+      backdrop-filter: blur(14px);
+      background: rgba(7,10,17,.55);
+      border-bottom: 1px solid var(--line);
+
+              top: 0;
+        left: 0;
+        right: 0;              
+        z-index: 9999;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        background: rgba(7,10,17,.55);
+        border-bottom: 1px solid rgba(255,255,255,.12);
+
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; text-decoration:none;
+      font-weight:800; letter-spacing:-.02em;
+      white-space:nowrap;
+    }
+    .logo-dot{
+      width:14px; height:14px; border-radius:999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(255,255,255,.04);
+    }
+    .navlinks{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .navlinks a{
+      text-decoration:none; color: var(--muted);
+      padding:8px 10px; border-radius: 12px;
+    }
+    .navlinks a:hover{background: rgba(255,255,255,.06); color: var(--text);}
+
+    /* Cards / Glass */
+    .card{
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow2);
+    }
+    .glass{
+      position:relative;
+      overflow:hidden;
+    }
+    .glass:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(600px 200px at 20% 10%, rgba(66,232,224,.20), transparent 50%),
+        radial-gradient(600px 200px at 80% 15%, rgba(91,140,255,.18), transparent 50%),
+        radial-gradient(600px 200px at 70% 85%, rgba(180,76,255,.16), transparent 55%);
+      filter: blur(14px);
+      opacity:.75;
+      pointer-events:none;
+    }
+    .glass > *{ position:relative; }
+
+    /* Hero */
+    .hero{padding: 54px 0 10px;}
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.18fr .82fr;
+      gap: 18px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){ .hero-grid{grid-template-columns: 1fr;} }
+
+    .hero-main{ padding: 22px 22px 20px; }
+    .kicker{
+      display:inline-flex; align-items:center; gap:8px;
+      font-size:12px; color:var(--muted);
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(0,0,0,.18);
+    }
+    .kicker .spark{
+      width: 10px; height: 10px; border-radius: 999px;
+      background: var(--accent);
+    }
+    h1{
+      margin: 12px 0 10px;
+      font-size: clamp(28px, 3.1vw, 44px);
+      line-height:1.12;
+      letter-spacing:-.03em;
+    }
+    .lead{
+      margin:0;
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 62ch;
+    }
+
+    /* Buttons */
+    .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top: 16px;}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      border-radius: 16px;
+      padding: 11px 14px;
+      text-decoration:none;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-weight: 800;
+      letter-spacing: -.01em;
+      cursor:pointer;
+      transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+    }
+    .btn:hover{transform: translateY(-1px); box-shadow: var(--shadow2);}
+    .btn-primary{
+      border: none;
+      background: var(--accent);
+      color: #07101a;
+    }
+    .btn-primary:hover{filter:saturate(1.08)}
+    .btn-ghost{
+      background: transparent;
+      border-color: rgba(255,255,255,.16);
+      color: var(--text);
+    }
+
+    .mini{
+      font-size:12px; color: var(--muted);
+      margin-top: 10px;
+      display:flex; gap:12px; flex-wrap:wrap;
+    }
+
+    .hero-side{
+      padding: 18px;
+      display:flex; flex-direction:column; gap:12px;
+    }
+    .side-block{
+      padding: 14px 14px 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(0,0,0,.14);
+    }
+    .side-title{font-weight:900; margin:0 0 6px; letter-spacing:-.02em}
+    .side-text{margin:0; color: var(--muted); font-size:13px}
+
+    .trust{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+      margin-top: 10px;
+    }
+    @media (max-width: 560px){ .trust{grid-template-columns: 1fr;} }
+    .trust .pill{
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      border-radius: 999px;
+      padding: 8px 10px;
+      font-size: 12px;
+      color: var(--muted);
+      display:flex; align-items:center; gap:8px;
+      justify-content: center;
+    }
+    .pill .dot{
+      width: 8px; height: 8px; border-radius: 999px; background: var(--accent);
+    }
+
+    /* Sections */
+    section{padding: 34px 0;}
+    .section-head h2{
+      margin: 0 0 8px;
+      font-size: 26px;
+      letter-spacing: -.02em;
+    }
+    .intro{margin:0; color: var(--muted); max-width: 82ch;}
+    .divider{
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent);
+      margin: 18px 0 16px;
+    }
+
+    .grid{display:grid; gap: 14px;}
+    .cols-3{grid-template-columns: repeat(3, 1fr);}
+    .cols-4{grid-template-columns: repeat(4, 1fr);}
+    @media (max-width: 980px){
+      .cols-3{grid-template-columns: 1fr;}
+      .cols-4{grid-template-columns: repeat(2, 1fr);}
+    }
+    @media (max-width: 560px){
+      .cols-4{grid-template-columns: 1fr;}
+    }
+
+    /* Feature cards */
+    .feature{padding: 16px}
+    .feature h3{margin: 0 0 6px; font-size: 16px; letter-spacing:-.02em}
+    .feature p{margin:0; color: var(--muted); font-size:13px}
+    .icon{
+      width: 34px; height: 34px; border-radius: 14px;
+      display:flex; align-items:center; justify-content:center;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      margin-bottom: 10px;
+      position:relative;
+      overflow:hidden;
+    }
+    .icon:before{
+      content:"";
+      position:absolute; inset:-20px;
+      background: var(--accent);
+      opacity:.35;
+      filter: blur(22px);
+    }
+    .icon span{position:relative; font-weight:900; color:#07101a; background: var(--accent);
+      -webkit-background-clip:text; background-clip:text; color: transparent;
+      font-size: 14px;
+    }
+
+    /* Implementation steps */
+    .steps{grid-template-columns: repeat(4, 1fr);}
+    @media (max-width: 980px){ .steps{grid-template-columns: 1fr;} }
+    .step{padding: 16px; position:relative}
+    .step .num{
+      display:inline-flex; align-items:center; justify-content:center;
+      width: 28px; height: 28px; border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.14);
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .step h3{margin:0 0 6px; font-size: 15px; letter-spacing:-.02em}
+    .step p{margin:0; color: var(--muted); font-size:13px}
+
+    /* Promo pricing cards */
+    .pricing-card{padding: 16px 16px 14px; position:relative; overflow:hidden;}
+    .pricing-card:hover{box-shadow: var(--shadow); transform: translateY(-2px);}
+    .pricing-card h3{margin: 4px 0 6px; font-size: 18px; letter-spacing:-.02em;}
+    .tagline{margin:0; color: var(--muted); font-size:13px}
+    .price-row{
+      display:flex; align-items:baseline; gap:10px;
+      margin: 14px 0 10px;
+      flex-wrap:wrap;
+    }
+    .price{font-size: 28px; font-weight: 950; letter-spacing:-.03em;}
+    .per{font-size: 12px; color: var(--muted);}
+    .was{font-size: 12px; color: rgba(255,255,255,.58);}
+
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      font-size: 12px; font-weight: 900;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+    }
+    .badge-promo{
+      border: none;
+      background: linear-gradient(90deg, rgba(255,92,168,.22), rgba(180,76,255,.22), rgba(91,140,255,.20));
+    }
+    .percent{
+      display:inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.14);
+    }
+    .ribbon{
+      position:absolute;
+      top: 14px; right: 14px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 950;
+      background: var(--accent);
+      color: #07101a;
+    }
+    .pricing-card ul{margin: 10px 0 0; padding: 0 0 0 18px;}
+    .pricing-card li{margin: 8px 0; color: rgba(255,255,255,.84); font-size: 13px}
+    .pricing-card b{color: var(--text)}
+
+    /* Services */
+    .svc{padding: 16px;}
+    .svc .name{margin: 0 0 6px; font-size: 16px; letter-spacing:-.02em;}
+    .svc .meta{margin:0; color: var(--muted); font-size:12px}
+    .svc ul{margin: 12px 0 0; padding:0 0 0 18px}
+    .svc li{margin: 7px 0; color: rgba(255,255,255,.84); font-size: 13px}
+
+    /* FAQ */
+    .faq{grid-template-columns: 1fr 1fr;}
+    @media (max-width: 980px){ .faq{grid-template-columns: 1fr;} }
+    .qa{padding: 16px}
+    .q{margin:0 0 6px; font-weight: 950; letter-spacing:-.02em}
+    .a{margin:0; color: var(--muted); font-size:13px}
+
+    /* Contact */
+    .contact-section{padding: 44px 0 56px;}
+    .contact-grid{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 14px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){ .contact-grid{grid-template-columns: 1fr;} }
+
+    .contact-card{padding: 18px}
+    .contact-card h2{margin:0 0 8px; font-size: 26px; letter-spacing:-.02em}
+    .contact-card p{margin:0; color: var(--muted); max-width: 78ch}
+    .contact-actions{margin-top: 14px; display:flex; gap:12px; flex-wrap:wrap}
+
+    .company{
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.14);
+    }
+    .company .row{display:flex; gap:10px; flex-wrap:wrap; align-items:baseline}
+    .company strong{font-weight: 950}
+    .company .addr{color: rgba(255,255,255,.82)}
+    .footnotes{
+      margin-top: 12px;
+      color: rgba(255,255,255,.58);
+      font-size: 12px;
+      line-height:1.5;
+    }
+    .map{
+      padding: 0;
+      overflow:hidden;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      min-height: 360px;
+    }
+    .map iframe{
+      width:100%;
+      height:100%;
+      min-height:360px;
+      border:0;
+      filter: saturate(1.05) contrast(1.05);
+    }
+
+    /* Footer */
+    .footer{
+      padding: 22px 0 44px;
+      color: rgba(255,255,255,.55);
+      font-size: 12px;
+    }
+    .footgrid{
+      display:flex; justify-content:space-between; gap: 14px; flex-wrap:wrap;
+      border-top: 1px solid rgba(255,255,255,.10);
+      padding-top: 14px;
+    }
+    .note{max-width: 92ch}
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
+      padding: 2px 6px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 8px;
+      background: rgba(0,0,0,.18);
+    }
+
+    .compare {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 900px){
+    .compare{grid-template-columns: 1fr;}
+    }
+
+    .compare-card {
+    padding: 18px;
+    position: relative;
+    }
+
+    .compare-head {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom: 10px;
+    }
+
+    .compare-head h3 {
+    margin:0;
+    font-size: 18px;
+    letter-spacing:-.02em;
+    }
+
+    .badge-ok {
+    background: linear-gradient(90deg, rgba(91,255,179,.2), rgba(66,232,224,.2));
+    border: 1px solid rgba(91,255,179,.35);
+    }
+
+    .cmp-list {
+    margin: 0;
+    padding: 0 0 0 18px;
+    }
+
+    .cmp-list li {
+    margin: 10px 0;
+    color: rgba(255,255,255,.85);
+    font-size: 13.5px;
+    }
+
+    .note-box {
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.05);
+    text-align: center;
+    }
+    .note-box p {
+    margin:0;
+    color: rgba(255,255,255,.9);
+    font-size: 14px;
+    }
+
+    /* ========== TOGGLE: Copilot vs Chat ========== */
+
+    .toggle-shell{
+    padding: 16px;
+    }
+
+    .toggle-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 12px;
+    flex-wrap:wrap;
+    margin-bottom: 14px;
+    }
+
+    .toggle-control{
+    position: relative;
+    display:flex;
+    gap: 6px;
+    padding: 6px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px;
+    background: rgba(0,0,0,.18);
+    overflow:hidden;
+    }
+
+    .tbtn{
+    position:relative;
+    z-index:2;
+    appearance:none;
+    border: 0;
+    background: transparent;
+    color: rgba(255,255,255,.78);
+    font-weight: 900;
+    letter-spacing: -.01em;
+    padding: 10px 12px;
+    border-radius: 999px;
+    cursor:pointer;
+    transition: color .15s ease;
+    white-space:nowrap;
+    }
+
+    .tbtn.is-active{ color: rgba(7,10,17,.95); }
+
+    .t-indicator{
+    position:absolute;
+    inset: 6px auto 6px 6px;
+    width: calc(50% - 6px);
+    border-radius: 999px;
+    background: var(--accent);
+    z-index:1;
+    transition: transform .2s ease;
+    }
+
+    .toggle-badges{display:flex; gap:10px; align-items:center}
+
+    .toggle-panels{
+    position:relative;
+    }
+
+    .panel{
+    padding: 14px 12px 10px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(0,0,0,.14);
+    }
+
+    .panel.is-show{
+    animation: fadeUp .18s ease both;
+    }
+
+    @keyframes fadeUp{
+    from{opacity:.0; transform: translateY(4px);}
+    to{opacity:1; transform: translateY(0);}
+    }
+
+    .panel-head{
+    display:flex;
+    align-items:flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+    }
+
+    .panel-head h3{
+    margin: 0 0 2px;
+    font-size: 18px;
+    letter-spacing:-.02em;
+    }
+
+    .small{font-size: 12.5px;}
+    .muted{color: rgba(255,255,255,.68);}
+
+    .panel-icon{
+    width: 38px; height: 38px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.06);
+    display:flex; align-items:center; justify-content:center;
+    position:relative; overflow:hidden;
+    }
+
+    .panel-icon:before{
+    content:"";
+    position:absolute; inset:-24px;
+    background: var(--accent);
+    opacity:.35;
+    filter: blur(22px);
+    }
+    .panel-icon.chat:before{
+    background: linear-gradient(90deg, rgba(255,92,168,.35), rgba(91,140,255,.25));
+    }
+
+    .panel-icon span{position:relative; font-weight: 900;}
+
+    .cmp-list{
+    margin: 0;
+    padding: 0 0 0 18px;
+    }
+    .cmp-list li{
+    margin: 10px 0;
+    color: rgba(255,255,255,.86);
+    font-size: 13.5px;
+    }
+    .cmp-list b{color: rgba(255,255,255,.95);}
+
+    .note-box{
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.05);
+    }
+    .note-box p{margin:0; font-size: 13.5px; color: rgba(255,255,255,.9);}
+    .note-box.warn{
+    border-color: rgba(255,92,168,.25);
+    background: rgba(255,92,168,.08);
+    }
+
+    .toggle-cta{
+    margin-top: 14px;
+    display:flex;
+    gap: 12px;
+    flex-wrap:wrap;
+    }
+
+    
+        /* ===== Toggle v2: more Microsoft ===== */
+    #difference-toggle-v2 .v2-shell{
+    padding: 16px;
+    transition: box-shadow .25s ease, outline-color .25s ease;
+    outline: 1px solid rgba(255,255,255,.10);
+    outline-offset: 0;
+    }
+
+    #difference-toggle-v2 .v2-shell[data-view="copilot"]{
+    box-shadow: 0 18px 60px rgba(66,232,224,.10), 0 10px 40px rgba(91,140,255,.10);
+    }
+
+    #difference-toggle-v2 .v2-shell[data-view="chat"]{
+    box-shadow: 0 18px 60px rgba(255,92,168,.10), 0 10px 40px rgba(180,76,255,.10);
+    }
+
+    #difference-toggle-v2 .v2-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 12px;
+    flex-wrap:wrap;
+    margin-bottom: 14px;
+    }
+
+    #difference-toggle-v2 .v2-tabs{
+    position:relative;
+    display:flex;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(0,0,0,.18);
+    overflow:hidden;
+    }
+
+    #difference-toggle-v2 .v2-tab{
+    position:relative;
+    z-index:2;
+    border:0;
+    background: transparent;
+    color: rgba(255,255,255,.78);
+    font-weight: 950;
+    letter-spacing:-.01em;
+    padding: 10px 12px;
+    border-radius: 999px;
+    cursor:pointer;
+    display:inline-flex;
+    align-items:center;
+    gap: 8px;
+    transition: color .15s ease, transform .15s ease;
+    white-space:nowrap;
+    }
+
+    #difference-toggle-v2 .v2-tab:hover{ transform: translateY(-1px); }
+    #difference-toggle-v2 .v2-tab.is-active{ color: rgba(7,10,17,.96); }
+
+    #difference-toggle-v2 .v2-tab-ico{
+    display:inline-flex;
+    opacity:.95;
+    }
+
+    #difference-toggle-v2 .v2-indicator{
+    position:absolute;
+    inset: 6px auto 6px 6px;
+    width: calc((100% - 18px) / 2);
+    border-radius: 999px;
+    background: var(--accent);
+    z-index:1;
+    transition: transform .22s ease;
+    will-change: transform;
+    }
+
+    #difference-toggle-v2 .v2-badges{
+    display:flex; gap: 10px; align-items:center;
+    }
+
+    #difference-toggle-v2 .v2-mini-ico{
+    display:inline-flex; opacity:.95;
+    }
+
+    #difference-toggle-v2 .v2-panels{ position:relative; }
+
+    #difference-toggle-v2 .v2-panel{
+    padding: 14px 12px 12px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(0,0,0,.14);
+    }
+
+    #difference-toggle-v2 .v2-panel.is-show{
+    animation: v2fade .18s ease both;
+    }
+
+    @keyframes v2fade{
+    from{opacity:0; transform: translateY(4px);}
+    to{opacity:1; transform: translateY(0);}
+    }
+
+    #difference-toggle-v2 .v2-head{
+    display:flex;
+    align-items:flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+    }
+
+    #difference-toggle-v2 .v2-head h3{
+    margin: 0 0 2px;
+    font-size: 18px;
+    letter-spacing:-.02em;
+    }
+
+    #difference-toggle-v2 .small{ font-size: 12.5px; }
+    #difference-toggle-v2 .muted{ color: rgba(255,255,255,.68); }
+
+    #difference-toggle-v2 .v2-icon{
+    width: 44px; height: 44px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.06);
+    display:flex; align-items:center; justify-content:center;
+    position:relative; overflow:hidden;
+    color: rgba(255,255,255,.92);
+    }
+
+    #difference-toggle-v2 .v2-icon:before{
+    content:"";
+    position:absolute; inset:-28px;
+    background: var(--accent);
+    opacity:.32;
+    filter: blur(24px);
+    }
+
+    #difference-toggle-v2 .v2-icon.chat:before{
+    background: linear-gradient(90deg, rgba(255,92,168,.45), rgba(180,76,255,.30));
+    }
+
+    #difference-toggle-v2 .v2-icon svg{ position:relative; }
+
+    #difference-toggle-v2 .v2-table{
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 16px;
+    overflow:hidden;
+    background: rgba(255,255,255,.03);
+    }
+
+    #difference-toggle-v2 .v2-row{
+    display:grid;
+    grid-template-columns: 1fr 180px;
+    gap: 0;
+    border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    #difference-toggle-v2 .v2-row:first-child{ border-top: 0; }
+
+    #difference-toggle-v2 .v2-row-head{
+    background: rgba(0,0,0,.18);
+    }
+
+    #difference-toggle-v2 .v2-cell{
+    padding: 11px 12px;
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    color: rgba(255,255,255,.86);
+    font-size: 13.5px;
+    }
+
+    #difference-toggle-v2 .v2-row-head .v2-cell{
+    font-weight: 950;
+    color: rgba(255,255,255,.86);
+    font-size: 12.5px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    }
+
+    #difference-toggle-v2 .v2-ans{
+    justify-content:flex-end;
+    }
+
+    #difference-toggle-v2 .v2-row-ico{
+    display:inline-flex;
+    opacity:.92;
+    color: rgba(255,255,255,.85);
+    }
+
+    #difference-toggle-v2 .v2-ans .yn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width: 60px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 950;
+    font-size: 12px;
+    letter-spacing: .02em;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.06);
+    }
+
+    #difference-toggle-v2 .v2-ans.yes .yn{
+    border-color: rgba(66,232,224,.25);
+    background: rgba(66,232,224,.10);
+    }
+
+    #difference-toggle-v2 .v2-ans.no .yn{
+    border-color: rgba(255,92,168,.25);
+    background: rgba(255,92,168,.10);
+    }
+
+    #difference-toggle-v2 .v2-ans.warn .yn{
+    border-color: rgba(255,190,60,.25);
+    background: rgba(255,190,60,.10);
+    }
+
+    #difference-toggle-v2 .sr{
+    position:absolute;
+    width:1px; height:1px;
+    padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0);
+    border:0;
+    }
+
+    #difference-toggle-v2 .v2-callout{
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.05);
+    }
+
+    #difference-toggle-v2 .v2-callout p{
+    margin:0;
+    font-size: 13.5px;
+    color: rgba(255,255,255,.9);
+    }
+
+    #difference-toggle-v2 .v2-callout-warn{
+    border-color: rgba(255,92,168,.25);
+    background: rgba(255,92,168,.08);
+    }
+
+    @media (max-width: 560px){
+    #difference-toggle-v2 .v2-row{ grid-template-columns: 1fr 140px; }
+    #difference-toggle-v2 .v2-tabs{ width: 100%; justify-content:space-between; }
+    }
+
+        /* 1) Kotwica dla ribbon */
+.pricing-card{
+  position: relative;
+}
+
+/* Karta musi być kotwicą */
+.pricing-card { position: relative; }
+
+/* Tylko dla tej wyróżnionej */
+.pricing-card.is-popular { overflow: visible; } /* ribbon może wystawać */
+
+/* Ribbon: środek górnej krawędzi */
+.pricing-card.is-popular .ribbon{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -55%);
+  z-index: 5;
+
+  /* to naprawia "napis nie jest na środku" */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* ważne: symetryczny padding */
+  padding: 8px 16px;
+
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: -.01em;
+  line-height: 1;           /* usuwa optyczne "opadanie" */
+
+  background: var(--accent);
+  color: rgba(7,10,17,.95);
+  box-shadow: 0 14px 40px rgba(0,0,0,.45);
+  white-space: nowrap;
+
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+/* Zrób miejsce u góry wewnątrz karty, żeby tytuł nie podchodził pod ribbon */
+.pricing-card.is-popular{
+  padding-top: 28px; /* dopasuj 24–34px zależnie od fontu */
+}
+
+@media (max-width: 560px){
+  .pricing-card.is-popular{ padding-top: 30px; }
+  .pricing-card.is-popular .ribbon{
+    transform: translate(-50%, -60%);
+    padding: 8px 12px;
+  }
+}
+
+/* ===== Mobile menu ===== */
+.menu-btn{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.92);
+  cursor:pointer;
+}
+.menu-btn:hover{ transform: translateY(-1px); box-shadow: 0 12px 30px rgba(0,0,0,.35); }
+
+.drawer-overlay{
+
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.68);          /* było .55 → mocniej */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9998;
+}
+
+
+.mobile-drawer{
+position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: min(360px, 92vw);
+  z-index: 9999;
+
+  border-left: 1px solid rgba(255,255,255,.14);
+
+  /* klucz: mniej transparentne tło */
+  background: rgba(7,10,17,.92);        /* było .72 → dużo bardziej czytelne */
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  /* dodatkowo: „solid feel” */
+  box-shadow: -20px 0 60px rgba(0,0,0,.65);
+  outline: 1px solid rgba(255,255,255,.06);
+  outline-offset: -1px;
+
+  transform: translateX(110%);
+  transition: transform .22s ease;
+  padding: 14px;
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+
+}
+
+/* subtelna poświata w środku drawer’a (premium) */
+.mobile-drawer::before{
+  content:"";
+  position:absolute;
+  inset:-80px -60px auto -60px;
+  height: 220px;
+  background: radial-gradient(closest-side, rgba(91,140,255,.18), transparent 70%),
+              radial-gradient(closest-side, rgba(180,76,255,.14), transparent 70%);
+  filter: blur(18px);
+  pointer-events:none;
+}
+
+
+.mobile-drawer.is-open{ transform: translateX(0); }
+
+.drawer-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.drawer-brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color: rgba(255,255,255,.92);
+}
+.drawer-brand strong{ letter-spacing:-.01em; }
+
+.drawer-close{
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.92);
+  cursor:pointer;
+}
+.drawer-close:hover{ transform: translateY(-1px); }
+
+.drawer-nav{
+  display:flex;
+  flex-direction:column;
+  gap: 6px;
+  padding: 6px 0;
+}
+
+.drawer-link{
+  text-decoration:none;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.88);
+  font-weight: 800;
+  letter-spacing:-.01em;
+}
+.drawer-link:hover{
+  border-color: rgba(255,255,255,.16);
+  background: rgba(255,255,255,.06);
+}
+
+.drawer-cta{
+  margin-top:auto;
+  display:flex;
+  gap: 10px;
+  flex-wrap:wrap;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,.10);
+}
+
+/* Responsive switch */
+@media (max-width: 980px){
+  .navlinks{ display:none; }
+  .menu-btn{ display:inline-flex; }
+}
+
+/* Prevent body scroll when drawer open */
+body.no-scroll{ overflow: hidden; }
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+
+.brand-logo{
+  width:32px;
+  height:32px;
+  display:block;
+  
+  flex: 0 0 32px;
+}
+
+.company.brandline{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.company-logo{
+  width:48px;      /* możesz podbić do 56/64 */
+  height:48px;
+  border-radius: 8px;
+  object-fit: contain;
+  flex: 0 0 48px;
+
+  
+ background: none;
+  border: none;
+  box-shadow: none;
+
+}
+
+.company-text .company-name{
+  font-weight: 950;
+  letter-spacing: -.01em;
+}
+
+.company-text .company-addr{
+  color: rgba(255,255,255,.78);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.btn-sub{
+  display:block;
+  font-size: 11px;
+  font-weight: 600;
+  opacity: .8;
+  margin-top: 2px;
+}
+
+.footer-saas{
+  margin-top: 80px;
+  padding: 60px 0 20px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.02);
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 40px;
+}
+
+@media (max-width: 900px){
+  .footer-grid{ grid-template-columns: 1fr; }
+}
+
+/* LEFT */
+.footer-brand .brandline{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.footer-logo{
+  width:28px;
+  height:28px;
+}
+
+.brand-name{
+  font-weight: 900;
+  letter-spacing: -.01em;
+}
+
+.footer-desc{
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgba(255,255,255,.6);
+  max-width: 260px;
+}
+
+/* LINKS */
+.footer-links{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.footer-links .col{
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+}
+
+.col-title{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: rgba(255,255,255,.4);
+  margin-bottom: 6px;
+}
+
+.footer-links a{
+  text-decoration:none;
+  font-size: 14px;
+  color: rgba(255,255,255,.75);
+  transition: .2s;
+}
+
+.footer-links a:hover{
+  color: #fff;
+}
+
+/* BOTTOM */
+.footer-bottom{
+  margin-top: 40px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.06);
+  text-align:center;
+  font-size: 12px;
+  color: rgba(255,255,255,.4);
+}
+
+.footer-link-clean{
+  text-decoration: none;      /* brak podkreślenia */
+  color: inherit;             /* ten sam kolor co tekst */
+  cursor: pointer;
+}
+
+/* brak zmiany stylu na hover */
+.footer-link-clean:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img class="brand-logo" src="logo-300.png" alt="Logo" width="32" height="32" />
+      <span>Microsoft 365 Copilot Business</span>
+    </a>
+
+
+    <!-- DESKTOP NAV -->
+    <nav class="navlinks" aria-label="Nawigacja">
+      <a href="#how">AI w firmie</a>
+      <a href="#difference-toggle-v2">Copilot vs Chat</a>
+      <a href="#deploy">Jak wdrażamy</a>
+      <a href="#options">Promocje</a>
+      <a href="#additional-services">Dodatki</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <!-- MOBILE BUTTON -->
+    <button class="menu-btn" type="button"
+            aria-label="Otwórz menu"
+            aria-expanded="false"
+            aria-controls="mobile-drawer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="drawer-overlay" hidden></div>
+
+  <!-- DRAWER -->
+  <aside id="mobile-drawer" class="mobile-drawer" hidden aria-label="Menu mobilne">
+    <div class="drawer-head">
+      <div class="drawer-brand">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <strong>Menu</strong>
+      </div>
+
+      <button class="drawer-close" type="button" aria-label="Zamknij menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-nav" aria-label="Nawigacja mobilna">
+      <a class="drawer-link" href="#how">AI w firmie</a>
+      <a class="drawer-link" href="#difference-toggle-v2">Copilot vs Chat</a>
+      <a class="drawer-link" href="#deploy">Jak wdrażamy</a>
+      <a class="drawer-link" href="#options">Promocje</a>
+      <a class="drawer-link" href="#additional-services">Dodatki</a>
+      <a class="drawer-link" href="#faq">FAQ</a>
+      <a class="drawer-link" href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="drawer-cta">
+      <a class="btn btn-primary" target="_blank" rel="noopener"
+         href="https://bookings.cloud.microsoft/book/RedFlag1@redflag.com.pl">Umów 15–20 min</a>
+      <a class="btn btn-ghost"
+         href="mailto:msp@valcreon.com?subject=Microsoft%20365%20Copilot%20Business%20%E2%80%94%20wycena%20CSP">
+        Napisz e-mail
+      </a>
+           </div>
+           
+  </aside>
+</header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="card glass hero-main">
+          <div class="kicker"><span class="spark" aria-hidden="true"></span>Licencje CSP w PLN • Przejrzyste ceny</div>
+          <h1>Microsoft 365 Copilot Business – wdrożenia dla firm</h1>
+          <p class="lead">
+            Copilot automatyzuje e‑maile, dokumenty, Excel i Teams. Na danych Twojej firmy.
+            Dostarczamy licencje i wdrażamy Copilot tak, żebyś realnie oszczędzał czas.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" target="_blank" rel="noopener"
+               href="https://bookings.cloud.microsoft/book/RedFlag1@redflag.com.pl">
+              Umów 15 min
+            </a>
+
+            <a class="btn btn-ghost btn-with-sub"
+               href="mailto:msp@valcreon.com?subject=Microsoft%20365%20Copilot%20Business%20%E2%80%94%20wycena%20i%20termin&body=Dzie%C5%84%20dobry%2C%0A%0AProsz%C4%99%20o%20wycen%C4%99%20licencji%20Microsoft%20365%20Copilot%20Business%20w%20modelu%20CSP%20oraz%20informacj%C4%99%20o%20czasie%20uruchomienia.%0A%0A---%0ADANE%20DO%20KOPIOWANIA%20(bez%20formularza)%0A%0AFirma%3A%20%0ANIP%3A%20%0AOsoba%20kontaktowa%3A%20%0ATelefon%3A%20%0AE-mail%3A%20%0ALiczba%20u%C5%BCytkownik%C3%B3w%2Flicencji%20Copilot%3A%20%0APosiadany%20plan%20bazowy%20M365%3A%20%0AOkres%20rozliczenia%3A%20%0APreferowana%20data%20startu%3A%20%0AUwagi%2Fcele%20(2%20zdania)%3A%20%0A---%0A%0AJe%C5%9Bli%20wygodniej%2C%20mo%C5%BCna%20um%C3%B3wi%C4%87%20rozmow%C4%99%20tutaj%3A%0Ahttps%3A%2F%2Fbookings.cloud.microsoft%2Fbook%2FRedFlag1%40redflag.com.pl%0A%0ATelefon%3A%20%2B48%2022%20152%2050%2060%0A%0AZ%20g%C3%B3ry%20dzi%C4%99kuj%C4%99%2C%0A">
+              
+                <span>Napisz e‑mail</span>
+                <span class="btn-sub">1 klik • e‑mail</span>
+
+            </a>
+
+            <a class="btn" href="tel:+48221525060">+48 22 152 50 60</a>
+          </div>
+
+          <div class="mini">
+            <span>Bez formularzy: gotowy e-mail. </span>
+            <span>Ekspresowo: <span class="kbd">15 min</span> rozmowy i szybka wycena.</span>
+          </div>
+        </div>
+
+        <aside class="card glass hero-side">
+          <div class="side-block">
+            <p class="side-title">Dla kogo?</p>
+            <p class="side-text">Właściciele firm, którzy chcą wdrożyć AI bez chaosu i bez zmiany tego, co już działa.</p>
+            </div>
+
+            <div class="side-block">
+            <p class="side-title">Co sprzedajemy?</p>
+            <p class="side-text">AI (Copilot), bezpieczeństwo i kontrolę danych – na bazie Microsoft 365.</p>
+            </div>
+
+            <div class="side-block">
+            <p class="side-title">Jak zaczynamy?</p>
+            <p class="side-text">Licencje → pilot → zabezpieczenie danych. Najpierw efekt, potem skalowanie.</p>    
+            </div>
+
+
+                <div class="trust" aria-label="Elementy zaufania">
+                <div class="pill"><span class="dot"></span>Licencje w PLN</div>
+                <div class="pill"><span class="dot"></span>Szybki efekt</div>
+                <div class="pill"><span class="dot"></span>Polska firma</div>
+                </div>
+
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+            <!-- HOW COPILOT HELPS -->
+            <section id="how">
+        <div class="wrap">
+            <div class="section-head">
+            <h2>Co zmienia Copilot w codziennej pracy</h2>
+            <p class="intro">
+                Mniej powtarzalnej roboty. Więcej czasu na to, co naprawdę wymaga Twojej głowy.
+            </p>
+            </div>
+            <hr class="divider" />
+
+            <div class="grid cols-4">
+
+            <div class="card feature glass">
+                <div class="icon"><span>✉</span></div>
+                <h3>E‑maile i wątki</h3>
+                <p>Podsumowuje długie wątki i pisze szkice odpowiedzi – zanim zdążysz przeczytać całość.</p>
+            </div>
+
+            <div class="card feature glass">
+                <div class="icon"><span>📄</span></div>
+                <h3>Oferty i dokumenty</h3>
+                <p>Szkic oferty, zmiana tonu, streszczenie – gotowy materiał w minutach, nie godzinach.</p>
+            </div>
+
+            <div class="card feature glass">
+                <div class="icon"><span>📊</span></div>
+                <h3>Excel i liczby</h3>
+                <p>Wyciąga wnioski z tabel i tłumaczy dane na decyzje – bez ręcznego klejenia formuł.</p>
+            </div>
+
+            <div class="card feature glass">
+                <div class="icon"><span>🎥</span></div>
+                <h3>Spotkania i Teams</h3>
+                <p>Podsumowanie, ustalenia i następne kroki – gotowe zanim wyjdziesz ze spotkania.</p>
+            </div>
+
+            </div>
+
+        <!-- WORK IQ — wariant A responsive -->
+            <style>
+              .wiq{
+                margin-top:2.5rem;
+                display:grid;
+                grid-template-columns:5rem 1fr;
+                border-radius:1rem;
+                border:1px solid rgba(124,77,255,.25);
+                background:linear-gradient(135deg,rgba(124,77,255,.06) 0%,rgba(0,200,255,.04) 100%);
+                overflow:hidden;
+                position:relative;
+              }
+              .wiq-accent{
+                display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;
+                background:linear-gradient(180deg,rgba(124,77,255,.12),rgba(0,200,255,.08));
+                border-right:1px solid rgba(124,77,255,.15);
+                padding:1.5rem .8rem;
+              }
+              .wiq-accent svg{flex-shrink:0;}
+              .wiq-label{
+                writing-mode:vertical-rl;text-orientation:mixed;
+                font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+                background:linear-gradient(180deg,#7c4dff,#00c8ff);
+                -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+              }
+              .wiq-body{padding:2rem 2rem 1.8rem 1.8rem;}
+              .wiq-body h3{margin:0 0 .5rem;}
+              .wiq-body > p{margin:0 0 1rem;opacity:.85;}
+              .wiq-pillars{
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+                gap:.8rem;
+              }
+              .wiq-pill{
+                padding:.9rem 1rem;border-radius:.7rem;
+              }
+              .wiq-pill strong{display:block;margin-bottom:.3rem;}
+              .wiq-pill span{font-size:.88rem;opacity:.8;}
+              .wiq-pill--a{background:rgba(124,77,255,.07);border:1px solid rgba(124,77,255,.15);}
+              .wiq-pill--b{background:rgba(0,200,255,.05);border:1px solid rgba(0,200,255,.15);}
+              .wiq-pill--c{background:rgba(124,77,255,.05);border:1px solid rgba(124,77,255,.12);}
+              .wiq-foot{margin:1.8rem 0 0;font-size:.88rem;opacity:.55;padding-top:1.8rem}
+              .wiq-badge-mobile{display:none;}
+            
+              @media(max-width:768px){
+                .wiq{grid-template-columns:1fr;}
+                .wiq-accent{display:none;}
+                .wiq-badge-mobile{
+                  display:inline-flex;align-items:center;gap:.5rem;
+                  margin-bottom:.8rem;
+                }
+                .wiq-badge-mobile svg{width:28px;height:28px;}
+                .wiq-badge-mobile span{
+                  background:linear-gradient(135deg,#7c4dff,#00c8ff);
+                  color:#fff;font-size:.6rem;font-weight:700;
+                  padding:.15rem .55rem;border-radius:999px;
+                  letter-spacing:.08em;text-transform:uppercase;
+                }
+                .wiq-body{padding:1.5rem;}
+                .wiq-pillars{grid-template-columns:1fr;}
+              }
+            </style>
+            
+            <div class="wiq glass">
+            
+              <!-- lewa kolumna - desktop -->
+              <div class="wiq-accent">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="url(#iqA)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <defs><linearGradient id="iqA" x1="0" y1="0" x2="24" y2="24">
+                    <stop offset="0%" stop-color="#7c4dff"/>
+                    <stop offset="100%" stop-color="#00c8ff"/>
+                  </linearGradient></defs>
+                  <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9Z"/>
+                  <circle cx="12" cy="12" r="3" stroke-width="1" opacity=".5"/>
+                </svg>
+                <span class="wiq-label">nowość</span>
+              </div>
+            
+              <!-- treść -->
+              <div class="wiq-body">
+            
+                <!-- badge + ikona - mobile only -->
+                <div class="wiq-badge-mobile">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#iqA)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <use href="#iqA"/>
+                    <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9Z"/>
+                    <circle cx="12" cy="12" r="3" stroke-width="1" opacity=".5"/>
+                  </svg>
+                  <span>nowość</span>
+                </div>
+            
+                <h3>Work IQ - Copilot, który rozumie Twoją firmę</h3>
+                <p>Nowa warstwa inteligencji w Microsoft 365 Copilot. Trzy filary, które zmieniają jakość odpowiedzi:</p>
+            
+                <div class="wiq-pillars">
+                  <div class="wiq-pill wiq-pill--a">
+                    <strong>📂 Dane firmowe</strong>
+                    <span>Maile, pliki, spotkania i czaty - szuka tam, gdzie naprawdę jest Twoja wiedza.</span>
+                  </div>
+                  <div class="wiq-pill wiq-pill--b">
+                    <strong>🔄 Pamięć</strong>
+                    <span>Uczy się stylu i kontekstu - każda kolejna odpowiedź jest trafniejsza.</span>
+                  </div>
+                  <div class="wiq-pill wiq-pill--c">
+                    <strong>⚡ Wnioskowanie</strong>
+                    <span>Łączy fakty z różnych źródeł i podpowiada kolejne kroki.</span>
+                  </div>
+                </div>
+            
+                <p class="wiq-foot">
+                  Efekt? Copilot nie odpowiada na ślepo - zna kontekst Twojej firmy i pracuje jak asystent, który jest na bieżąco.
+                </p>
+              </div>
+            </div>
+            <!-- /WORK IQ -->
+          
+        </div>
+        </section>
+
+
+    <!-- COPILOT VS COPILOT CHAT 
+    <section id="difference">
+    <div class="wrap">
+        <div class="section-head">
+        <h2>Microsoft 365 Copilot to nie jest Copilot Chat</h2>
+        <p class="intro">
+            To dwie różne rzeczy. Jedna pracuje na Twoich danych firmowych, druga ‑ na tym, co jest dostępne publicznie.
+        </p>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="grid cols-2 compare"> -->
+
+        <!-- Copilot 
+        <div class="card compare-card glass">
+            <div class="compare-head">
+            <h3>Microsoft 365 Copilot</h3>
+            <span class="badge badge-ok">Do pracy</span>
+            </div>
+
+            <ul class="cmp-list">
+            <li><b>Ma dostęp do danych firmy</b> ‑ działa na plikach, mailach, Teams, SharePoint</li>
+            <li><b>Możesz kontrolować źródła</b> ‑ np. ograniczyć korzystanie z Internetu</li>
+            <li><b>Integruje się z Office</b> ‑ Word, Excel, Outlook, PowerPoint, Teams</li>
+            <li><b>Widzi kontekst użytkownika</b> ‑ pracuje na danych w jego chmurze</li>
+            <li><b>Bezpieczeństwo M365</b> ‑ działa zgodnie z uprawnieniami i zasadami firmy</li>
+            <li><b>Jest płatny</b> ‑ jako dodatek do Microsoft 365 (CSP)</li>
+            </ul>
+        </div>
+
+        -->
+
+        <!-- Copilot Chat 
+        <div class="card compare-card glass">
+            <div class="compare-head">
+            <h3>Copilot Chat</h3>
+            <span class="badge">Ogólny AI</span>
+            </div>
+
+            <ul class="cmp-list">
+            <li><b>Korzysta głównie z Internetu</b> ‑ brak dostępu do Twoich danych firmowych</li>
+            <li><b>Dane wklejone do czatu wychodzą na zewnątrz</b> ‑ potencjalne ryzyko</li>
+            <li><b>Brak integracji z Office</b> ‑ tylko okno czatu</li>
+            <li><b>Nie zna Twojej firmy</b> ‑ brak kontekstu dokumentów i komunikacji</li>
+            <li><b>Dostęp tylko do publicznych danych</b></li>
+            <li><b>Często w pakiecie / dostępny szerzej</b> ‑ ale bez powiązania z pracą</li>
+            </ul>
+        </div>
+
+        </div>
+
+        <div class="note-box">
+        <p>
+            ✅ <b>W skrócie:</b> Copilot Chat pomaga „coś znaleźć lub napisać”.  
+            <strong>Microsoft 365 Copilot pomaga realnie pracować na Twoich danych.</strong>
+        </p>
+        </div>
+    </div>
+    </section> -->
+
+
+
+    <!-- COPILOT VS COPILOT CHAT (TOGGLE) 
+<section id="difference-toggle">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Microsoft 365 Copilot to nie jest Copilot Chat</h2>
+      <p class="intro">
+        To dwie różne rzeczy. Jedna pracuje na Twoich danych firmowych, druga ‑ na tym, co publiczne.
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="toggle-shell card glass">
+      <div class="toggle-top">
+        <div class="toggle-control" role="tablist" aria-label="Przełącz porównanie">
+          <button class="tbtn is-active" type="button"
+                  role="tab" aria-selected="true" aria-controls="panel-copilot" id="tab-copilot"
+                  data-view="copilot">
+            Microsoft 365 Copilot
+          </button>
+          <button class="tbtn" type="button"
+                  role="tab" aria-selected="false" aria-controls="panel-chat" id="tab-chat"
+                  data-view="chat">
+            Copilot Chat
+          </button>
+          <span class="t-indicator" aria-hidden="true"></span>
+        </div>
+
+        <div class="toggle-badges">
+          <span class="badge badge-ok" data-badge="copilot">Do pracy</span>
+          <span class="badge" data-badge="chat" hidden>Ogólny AI</span>
+        </div>
+      </div>
+
+      <div class="toggle-panels">  -->
+
+
+        <!-- PANEL: Copilot 
+        <div class="panel is-show" id="panel-copilot" role="tabpanel" aria-labelledby="tab-copilot">
+          <div class="panel-head">
+            <div class="panel-icon"><span>✨</span></div>
+            <div>
+              <h3>Microsoft 365 Copilot</h3>
+              <p class="muted small">Asystent do pracy na danych Twojej organizacji.</p>
+            </div>
+          </div>
+
+          <ul class="cmp-list">
+            <li><b>Ma dostęp do danych firmy</b> ‑ działa na plikach, mailach, Teams, SharePoint (zgodnie z uprawnieniami).</li>
+            <li><b>Możesz ograniczyć Internet</b> ‑ jeśli chcesz zmniejszyć ryzyko (np. scenariusze bez web).</li>
+            <li><b>Integruje się z Office</b> ‑ Word, Excel, Outlook, PowerPoint, Teams (to nie jest tylko okno czatu).</li>
+            <li><b>Ma kontekst użytkownika w chmurze</b> ‑ pomaga na jego dokumentach i komunikacji.</li>
+            <li><b>Jest płatny</b> ‑ jako licencja/dodatek CSP, wyceniany „od X PLN netto”.</li>
+          </ul>
+
+          <div class="note-box">
+            <p><b>W skrócie:</b> Copilot = praca na Twoich danych + Office + kontrola. </p>
+          </div>
+        </div>  -->
+
+            <!-- PANEL: Chat 
+            <div class="panel" id="panel-chat" role="tabpanel" aria-labelledby="tab-chat" hidden>
+            <div class="panel-head">
+                <div class="panel-icon chat"><span>💬</span></div>
+                <div>
+                <h3>Copilot Chat</h3>
+                <p class="muted small">Ogólny czat AI – bez Twojego firmowego kontekstu.</p>
+                </div>
+            </div>
+
+            <ul class="cmp-list">
+                <li><b>Korzysta głównie z Internetu</b> ‑ nie pracuje na Twoich danych firmowych.</li>
+                <li><b>Jeśli wkleisz dane w okno czatu</b>, mogą „polecieć dalej” ‑ to potencjalne ryzyko wycieku.</li>
+                <li><b>To tylko okno czatu</b> ‑ brak integracji z Office i przepływem pracy w firmie.</li>
+                <li><b>Nie ma kontekstu użytkownika</b> ‑ tylko informacje publiczne / ogólna wiedza.</li>
+                <li><b>Często jest dostępny „w ramach M365”</b> / szerzej ‑ ale to nie to samo co Copilot do pracy.</li>
+            </ul>
+
+            <div class="note-box warn">
+                <p><b>Uwaga:</b> Nie wklejaj do ogólnego czatu poufnych danych firmy (klienci, finanse, umowy).</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="toggle-cta">
+        <a class="btn btn-primary" target="_blank" rel="noopener"
+            href="https://bookings.cloud.microsoft/book/RedFlag1@redflag.com.pl">Umów 20 min ‑ dobór licencji</a>
+        <a class="btn btn-ghost"
+            href="mailto:msp@valcreon.com?subject=Microsoft%20365%20Copilot%20Business%20%E2%80%94%20wycena%20CSP&body=Dzie%C5%84%20dobry%2C%0A%0AProsz%C4%99%20o%20wycen%C4%99%20licencji%20Microsoft%20365%20Copilot%20Business%20w%20modelu%20CSP.%0A%0ALiczba%20licencji%3A%20%5Bwpisa%C4%87%5D%0APlan%20bazowy%20M365%3A%20%5BBasic%2FStandard%2FPremium%2FApps%5D%0A%0AFirma%3A%20%5Bwpisa%C4%87%5D%0ANIP%3A%20%5Bwpisa%C4%87%5D%0A%0AZ%20g%C3%B3ry%20dzi%C4%99kuj%C4%99%2C%0A%5BImi%C4%99%20i%20nazwisko%5D">
+            Napisz e‑mail (bez formularza)
+        </a>
+        </div>
+    </div>
+    </section> -->
+
+        <!-- COPILOT VS COPILOT CHAT (TOGGLE v2 / Microsoft style) -->
+    <section id="difference-toggle-v2">
+    <div class="wrap">
+        <div class="section-head">
+        <h2>Microsoft 365 Copilot to nie jest Copilot Chat</h2>
+  
+                    <p class="intro">
+                    Jedno pracuje na danych Twojej firmy. Drugie – na tym, co znajdzie w Internecie.
+                    </p>
+                    <p class="intro">
+                    Dla firmy to zasadnicza różnica.
+                    </p>
+
+
+        </div>
+
+        <hr class="divider" />
+        <div class="card glass v2-shell" data-view="copilot">
+        <div class="v2-top">
+            <div class="v2-tabs" role="tablist" aria-label="Przełącz porównanie Copilot vs Chat">
+            <button class="v2-tab is-active" type="button"
+                    role="tab" aria-selected="true" aria-controls="v2-panel-copilot" id="v2-tab-copilot"
+                    data-view="copilot">
+                <span class="v2-tab-ico" aria-hidden="true">
+
+
+                    
+
+                <!-- Sparkle -->
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                    <path d="M12 2l1.2 4.2L17.4 8 13.2 9.2 12 13.4 10.8 9.2 6.6 8l4.2-1.8L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M19 13l.8 2.8L22 17l-2.2.2L19 20l-.8-2.8L16 17l2.2-.2L19 13Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+                </span>
+                M365 Copilot
+            </button>
+
+            <button class="v2-tab" type="button"
+                    role="tab" aria-selected="false" aria-controls="v2-panel-chat" id="v2-tab-chat"
+                    data-view="chat">
+                <span class="v2-tab-ico" aria-hidden="true">
+
+                
+
+                <!-- Chat bubble -->
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                    <path d="M7 17l-3 3V6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M8 8h8M8 11h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+                </span>
+                Copilot Chat
+            </button>
+
+            <span class="v2-indicator" aria-hidden="true"></span>
+            </div>
+
+            <div class="v2-badges" aria-live="polite">
+            <span class="badge badge-ok" data-badge="copilot">
+                <span aria-hidden="true" class="v2-mini-ico">
+
+                
+
+
+                <!-- Check -->
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                    <path d="M20 7 10 17l-4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+                Do pracy
+            </span>
+
+            
+
+            <span class="badge" data-badge="chat" hidden>
+                <span aria-hidden="true" class="v2-mini-ico">
+
+
+
+                <!-- Globe -->
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                    <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10Z" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M2 12h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M12 2c3.2 3 3.2 17 0 20-3.2-3-3.2-17 0-20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+                </span>
+                Ogólny czat
+            </span>
+            </div>
+        </div>
+
+        
+
+        <div class="v2-panels">
+
+
+            <!-- PANEL: Copilot -->
+            <div class="v2-panel is-show" id="v2-panel-copilot" role="tabpanel" aria-labelledby="v2-tab-copilot">
+            <div class="v2-head">
+                <div class="v2-icon copilot" aria-hidden="true">
+                <!-- Office-ish tiles -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                    <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4H10v7H4V6.5Z" stroke="currentColor" stroke-width="1.8" />
+                    <path d="M10 4h3.5A2.5 2.5 0 0 1 16 6.5V11h-6V4Z" stroke="currentColor" stroke-width="1.8" />
+                    <path d="M4 13h6v7H6.5A2.5 2.5 0 0 1 4 17.5V13Z" stroke="currentColor" stroke-width="1.8" />
+                    <path d="M10 13h6v4.5A2.5 2.5 0 0 1 13.5 20H10v-7Z" stroke="currentColor" stroke-width="1.8" />
+                </svg>
+                </div>
+                <div>
+                <h3>Microsoft 365 Copilot</h3>
+                <p class="muted small">AI, które zna Twoją firmę i działa w Twoich aplikacjach.</p>
+                </div>
+            </div>
+
+            <!-- Mini-table (grid) -->
+            <div class="v2-table" role="table" aria-label="Porównanie funkcji: Copilot">
+                <div class="v2-row v2-row-head" role="row">
+                <div class="v2-cell" role="columnheader">Obszar</div>
+                <div class="v2-cell v2-ans" role="columnheader">Copilot</div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+
+
+                    <!-- Lock/Shield -->
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M12 22s8-3 8-10V6l-8-3-8 3v6c0 7 8 10 8 10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                        <path d="M9.5 12l1.8 1.8L15.8 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </span>
+                    Dostęp do danych firmy (OK)
+                </div>
+                <div class="v2-cell v2-ans yes" role="cell">
+                    <span class="yn" aria-hidden="true">TAK</span>
+                    <span class="sr">Tak</span>
+                </div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+
+                    <!-- Globe -->
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10Z" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M2 12h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                    </span>
+                    Kontrola źródeł (Internet włącz/wyłącz)
+                </div>
+                <div class="v2-cell v2-ans yes" role="cell">
+                    <span class="yn" aria-hidden="true">TAK</span>
+                    <span class="sr">Tak</span>
+                </div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+
+                    <!-- Apps -->
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M6 3h5v5H6V3Z" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M13 3h5v5h-5V3Z" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M6 10h5v5H6v-5Z" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M13 10h5v5h-5v-5Z" stroke="currentColor" stroke-width="1.8"/>
+                    </svg>
+                    </span>
+                    Działa w Word, Excel, Outlook, Teams
+                </div>
+                <div class="v2-cell v2-ans yes" role="cell">
+                    <span class="yn" aria-hidden="true">TAK</span>
+                    <span class="sr">Tak</span>
+                </div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+                    <!-- Cloud -->
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M7 18h11a4 4 0 0 0 0-8 6 6 0 0 0-11-1A4 4 0 0 0 7 18Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                    </span>
+                    Widzi Twoje pliki, maile i spotkania
+                </div>
+                <div class="v2-cell v2-ans yes" role="cell">
+                    <span class="yn" aria-hidden="true">TAK</span>
+                    <span class="sr">Tak</span>
+                </div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+                    <!-- Tag -->
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M20 13l-7 7-11-11V2h7l11 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                        <path d="M7 7h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    </span>
+                    Licencja płatna (dodatek CSP)
+                </div>
+                <div class="v2-cell v2-ans yes" role="cell">
+                    <span class="yn" aria-hidden="true">TAK</span>
+                    <span class="sr">Tak</span>
+                </div>
+                </div>
+            </div>
+
+            <div class="v2-callout">
+                <p><b>W skrócie:</b> Copilot pracuje na Twoich danych, w Twoich aplikacjach, pod Twoją kontrolą.</p>
+            </div>
+            </div>
+
+            <!-- PANEL: Chat -->
+            <div class="v2-panel" id="v2-panel-chat" role="tabpanel" aria-labelledby="v2-tab-chat" hidden>
+            <div class="v2-head">
+                <div class="v2-icon chat" aria-hidden="true">
+
+                <!-- Chat/Globe mix -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                    <path d="M7 17l-3 3V6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M8 8h8M8 11h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+                </div>
+                <div>
+                <h3>Copilot Chat</h3>
+                <p class="muted small">Ogólny czat AI – bez dostępu do danych Twojej firmy.</p>
+                </div>
+            </div>
+
+            <!-- Mini-table (grid) -->
+            <div class="v2-table" role="table" aria-label="Porównanie funkcji: Copilot Chat">
+                <div class="v2-row v2-row-head" role="row">
+                <div class="v2-cell" role="columnheader">Obszar</div>
+                <div class="v2-cell v2-ans" role="columnheader">Chat</div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M12 22s8-3 8-10V6l-8-3-8 3v6c0 7 8 10 8 10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                    </span>
+                    Dostęp do danych firmy (OK)
+                </div>
+                <div class="v2-cell v2-ans no" role="cell">
+                    <span class="yn" aria-hidden="true">NIE</span>
+                    <span class="sr">Nie</span>
+                </div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10Z" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M2 12h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                    </span>
+                    Źródło: tylko Internet
+                </div>
+                <div class="v2-cell v2-ans yes" role="cell">
+                    <span class="yn" aria-hidden="true">TAK</span>
+                    <span class="sr">Tak</span>
+                </div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+                    <!-- Apps -->
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M6 3h5v5H6V3Z" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M13 3h5v5h-5V3Z" stroke="currentColor" stroke-width="1.8"/>
+                    </svg>
+                    </span>
+                    Działa w Word, Excel, Outlook, Teams
+                </div>
+                <div class="v2-cell v2-ans no" role="cell">
+                    <span class="yn" aria-hidden="true">NIE</span>
+                    <span class="sr">Nie</span>
+                </div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+                    <!-- Alert -->
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M12 9v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M12 17h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M10.3 4.3 2.7 18.5A2 2 0 0 0 4.5 21h15a2 2 0 0 0 1.8-2.5L13.7 4.3a2 2 0 0 0-3.4 0Z"
+                            stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                    </span>
+                    Ryzyko wycieku danych przez wklejanie
+                </div>
+                <div class="v2-cell v2-ans warn" role="cell">
+                    <span class="yn" aria-hidden="true">UWAGA</span>
+                    <span class="sr">Uwaga</span>
+                </div>
+                </div>
+
+                <div class="v2-row" role="row">
+                <div class="v2-cell" role="cell">
+                    <span class="v2-row-ico" aria-hidden="true">
+                    <!-- Chat -->
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <path d="M7 17l-3 3V6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                    </span>
+                    Tylko okno czatu (bez integracji)
+                </div>
+                <div class="v2-cell v2-ans yes" role="cell">
+                    <span class="yn" aria-hidden="true">TAK</span>
+                    <span class="sr">Tak</span>
+                </div>
+                </div>
+            </div>
+
+            <div class="v2-callout v2-callout-warn">
+                <p><b>Uwaga:</b> Nie wklejaj do czatu danych klientów, umów ani finansów firmy.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="toggle-cta" style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn btn-primary" target="_blank" rel="noopener"
+            href="https://bookings.cloud.microsoft/book/RedFlag1@redflag.com.pl">
+            Umów 15 min ‑ dobierzemy licencje
+        </a>
+        <a class="btn btn-ghost"
+            href="mailto:msp@valcreon.com?subject=Microsoft%20365%20Copilot%20Business%20%E2%80%94%20wycena%20CSP&body=Dzie%C5%84%20dobry%2C%0A%0AProsz%C4%99%20o%20wycen%C4%99%20licencji%20Microsoft%20365%20Copilot%20Business%20w%20modelu%20CSP.%0A%0ALiczba%20licencji%3A%20%0APlan%20bazowy%20M365%3A%20%5BBasic%2FStandard%2FPremium%2FApps%5D%0A%0AFirma%3A%20%0ANIP%3A%20%0A%0AZ%20g%C3%B3ry%20dzi%C4%99kuj%C4%99%2C%0A%5BImi%C4%99%20i%20nazwisko%5D">
+            Napisz e‑mail – bez formularza
+        </a>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- HOW WE DEPLOY -->
+    <section id="deploy">
+      <div class="wrap">
+        <div class="section-head">
+          
+            <h2>Jak wdrażamy Copilot dla firm</h2>
+            <p class="intro">
+            Bez rewolucji. Zaczynamy od tego, co daje efekt w pierwszym tygodniu.
+            </p>
+
+        </div>
+        <hr class="divider" />
+
+        <div class="grid steps">
+          <div class="card step glass">
+            <div class="num">1</div>
+
+            <h3>Kwalifikacja i licencje</h3>
+            <p>Sprawdzamy, jaki plan M365 masz i kto w zespole powinien dostać Copilota jako pierwszy.</p>
+          </div>
+
+          <div class="card step glass">
+            <div class="num">2</div>
+            <h3>Gotowość danych</h3>
+            <p>Sprawdzamy, czy Twoje pliki i uprawnienia są gotowe – żeby Copilot widział to, co powinien, i nic więcej.</p>
+          </div>
+
+          <div class="card step glass">
+            <div class="num">3</div>
+
+            <h3>Pilot na 10–20 osób</h3>
+            <p>Startujemy z 2–3 zadaniami, które ludzie robią codziennie – i sprawdzamy, ile czasu Copilot im oszczędza.</p>
+
+          </div>
+
+          <div class="card step glass">
+            <div class="num">4</div>
+            <h3>Szkolenie i standardy pracy</h3>
+            <p>Dajemy gotowe „prompt patterns”, zasady użycia i krótką checklistę, żeby Copilot był wsparciem, nie zabawką.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPTIONS / PROMO PRICING -->
+    <section class="alt" id="options">
+      <div class="wrap">
+        <div class="section-head">
+            <h2>Copilot dla Twojej firmy – wybierz wariant</h2>
+
+                <p class="intro">
+                Ceny promocyjne do 30.06.2026. Minimum 10 użytkowników, model CSP.
+                </p>
+
+                <p class="intro">
+                Najlepsza cena? Copilot + Microsoft 365 w pakiecie.
+                </p>
+
+                <p class="intro">
+                Masz już licencje? Dokładamy Copilot bez zmiany planu.
+                </p>
+
+                <p class="intro">
+                Wyceń w 15 minut – bez formularzy.
+                </p>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="grid cols-3">
+
+          <!-- Option 1 -->
+          <div class="card pricing-card"
+               data-currency="PLN"
+               data-now="990"
+               data-was="1 600"
+               data-off="35">
+            <h3>Microsoft 365 Business Standard and Microsoft 365 Copilot Business</h3>
+            <p class="tagline">Aplikacje desktop + usługi chmurowe, teraz z wbudowanym AI.</p>
+
+            <div class="price-row" aria-live="polite">
+              <div class="price"><span class="cur">PLN</span> <span class="js-now">990</span></div>
+              <div class="per">netto / użytk. / rok.</div>
+              <span class="badge badge-promo" title="Promocja">
+                <span class="percent"><span class="js-off">35</span>%</span> PROMO
+              </span>
+              <div class="was">Było <span class="cur">PLN</span> <span class="js-was">1500</span></div>
+            </div>
+
+            <ul>
+                <li><b>Nie uczysz ludzi AI </b> – Word, Excel i Outlook zaczynają pracować dla nich</li>
+                <li><b>Kupujesz czas ludzi </b> – nie kolejne narzędzie do pracy</li>
+                <li><b>Minimalnie</b> 10 użytkowników</li>
+                <li><b>P/N:</b> CFQ7TTC0LDPB:001X</li>
+            </ul>
+
+            <div class="cta-row" style="margin-top:14px">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://bookings.cloud.microsoft/book/RedFlag1@redflag.com.pl">Umów 15 min</a>
+              <a class="btn btn-ghost"
+                 href="mailto:msp@valcreon.com?subject=PROMO%3A%20Copilot%20Business%20%2B%20Business%20Standard%20%E2%80%94%20wycena%20CSP&body=Dzie%C5%84%20dobry%2C%0A%0AProsz%C4%99%20o%20wycen%C4%99%20PROMO%3A%20Copilot%20Business%20%2B%20Business%20Standard%20(CSP).%0A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%20%5Bwpisa%C4%87%5D%0A%0AFirma%3A%20%5Bwpisa%C4%87%5D%0ANIP%3A%20%5Bwpisa%C4%87%5D%0A">
+                Poproś o wycenę
+              </a>
+            </div>
+          </div>
+
+          <!-- Option 2 (Most popular) -->
+          <div class="card pricing-card is-popular"
+               data-currency="PLN"
+               data-now="1 500"
+               data-was="2 000"
+               data-off="25">
+            <span class="ribbon" aria-label="Najpopularniejsze">Najpopularniejsze</span>
+            <h3>Microsoft 365 Business Premium and Microsoft 365 Copilot Business</h3>
+            <p class="tagline">AI‑produktywność i zaawansowane bezpieczeństwo w jednym rozwiązaniu.</p>
+
+            <div class="price-row" aria-live="polite">
+              <div class="price"><span class="cur">PLN</span> <span class="js-now">X</span></div>
+              <div class="per">netto / użytk. / mies.</div>
+              <span class="badge badge-promo" title="Promocja">
+                <span class="percent"><span class="js-off">25</span>%</span> PROMO
+              </span>
+              <div class="was">Było <span class="cur">PLN</span> <span class="js-was">Y</span></div>
+            </div>
+
+            <ul>
+              <li><b>Copilot pracuje na danych firmy</b> – a Ty masz kontrolę, co z nimi robi</li>
+              <li><b>AI przyspiesza pracę</b> – a Premium pilnuje wycieków</li>
+              <li><b>Minimalnie</b> 10 użytkowników</li>
+              <li><b>P/N:</b> CFQ7TTC0LCHC:001Q</li>
+            </ul>
+
+            <div class="cta-row" style="margin-top:14px">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://bookings.cloud.microsoft/book/RedFlag1@redflag.com.pl">Umów 15 min</a>
+              <a class="btn btn-ghost"
+                 href="mailto:msp@valcreon.com?subject=PROMO%3A%20Copilot%20Business%20%2B%20Business%20Premium%20%E2%80%94%20wycena%20CSP&body=Dzie%C5%84%20dobry%2C%0A%0AProsz%C4%99%20o%20wycen%C4%99%20PROMO%3A%20Copilot%20Business%20%2B%20Business%20Premium%20(CSP).%0A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%20%5Bwpisa%C4%87%5D%0A%0AFirma%3A%20%5Bwpisa%C4%87%5D%0ANIP%3A%20%5Bwpisa%C4%87%5D%0A">
+                Poproś o wycenę
+              </a>
+            </div>
+          </div>
+
+          <!-- Option 3 -->
+          <div class="card pricing-card"
+               data-currency="PLN"
+               data-now="1 750"
+               data-was="2 444"
+               data-off="30">
+            <h3>Microsoft 365 Business Premium and Microsoft 365 Copilot Business + Purview Suite</h3>
+            <p class="tagline">AI‑produktywność + wzmocniona ochrona danych i zgodność.</p>
+
+            <div class="price-row" aria-live="polite">
+              <div class="price"><span class="cur">PLN</span> <span class="js-now">X</span></div>
+              <div class="per">netto / użytk. / mies.</div>
+              <span class="badge badge-promo" title="Promocja">
+                <span class="percent"><span class="js-off">30</span>%</span> PROMO
+              </span>
+              <div class="was">Było <span class="cur">PLN</span> <span class="js-was">Y</span></div>
+            </div>
+
+            <ul>
+              <li><b>Copilot pracuje na danych firmy</b> – a Ty masz kontrolę, co z nimi robi</li>
+              <li><b>Nie blokujesz AI</b> – blokujesz ryzyko wycieku danych</li>
+              <li><b>Minimalnie</b> 10 użytkowników</li>
+              <li><b>P/N:</b> CFQ7TTC0LCHC:001Q + CFQ7TTC0LCHC:001H</li>
+            </ul>
+
+            <div class="cta-row" style="margin-top:14px">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://bookings.cloud.microsoft/book/RedFlag1@redflag.com.pl">Umów 15 min</a>
+              <a class="btn btn-ghost"
+                 href="mailto:msp@valcreon.com?subject=PROMO%3A%20Copilot%20Business%20%2B%20Premium%20%2B%20Purview%20%E2%80%94%20wycena%20CSP&body=Dzie%C5%84%20dobry%2C%0A%0AProsz%C4%99%20o%20wycen%C4%99%20PROMO%3A%20Copilot%20Business%20%2B%20Premium%20%2B%20Purview%20(CSP).%0A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%20%5Bwpisa%C4%87%5D%0A%0AFirma%3A%20%5Bwpisa%C4%87%5D%0ANIP%3A%20%5Bwpisa%C4%87%5D%0A">
+                Poproś o wycenę
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADDITIONAL SERVICES -->
+    <section class="wrap" id="additional-services" aria-labelledby="svc-heading">
+      <div class="section-head">
+        <h2 id="svc-heading">Dodatki</h2>
+                <p class="intro">
+                Masz już Microsoft 365 teraz możesz zrobić z niego coś więcej.
+                </p>
+                <p class="intro">
+                Dodaj Copilot, zabezpiecz dostęp i wprowadź realną kontrolę nad danymi.
+                </p>
+                <p class="intro">
+                Bez zmiany systemu. Bez migracji. Bez chaosu.
+                </p>
+                <p class="intro">
+                Dobierzemy pakiet dopasowany do Twojej firmy – nie do korporacyjnego cennika.
+                </p>
+                <p class="intro">
+                Dodatki Defender i Purview wymagają licencji M365 Business Premium.
+                </p>
+      </div>
+      <hr class="divider" />
+
+      <div class="grid cols-4">
+        <div class="card svc glass">
+          <h3 class="name">Microsoft 365 Copilot Business (dodatek)</h3>
+          <p class="meta">Dodaj AI do planów Microsoft 365.</p>
+          <div class="price-row" aria-live="polite">
+            <div class="price"><span class="cur">PLN</span> <span>850</span></div>
+            <div class="per">netto / użytk. / rok</div>
+            <div class="badge badge-promo" title="Oferta promocyjna do 2026-06"><span class="percent">Cena promocyjna</span> 2026-06</div>
+          </div>
+          <ul>
+            <li>Działa w aplikacjach Microsoft 365</li>
+            <li>Respektuje uprawnienia i kontrolę dostępu</li>
+            <li>P/N: CFQ7TTC0MM8R: 001P</li>
+          </ul>
+          <div class="cta-row" style="margin-top:12px">
+                    <a class="btn btn-primary"
+                    href="mailto:msp@valcreon.com?subject=Zapytanie%20o%20Microsoft%20365%20Copilot%20Business&body=Dzie%C5%84%20dobry%2C%0A%0AProsz%C4%99%20o%20informacj%C4%99%20o%20licencji%20Microsoft%20365%20Copilot%20Business.%0A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%20%0APlan%20bazowy%20M365%3A%20%0A%0AFirma%3A%20%0ANIP%3A%20%0A%0AZ%20g%C3%B3ry%20dzi%C4%99kuj%C4%99">
+                    Zapytaj o cenę
+                     <span class="btn-sub">1 klik • e‑mail</span>
+                    </a>                    
+               
+
+          </div>
+        </div>
+
+        <div class="card svc glass">
+          <h3 class="name">Microsoft Defender Suite for Microsoft 365 Business Premium (dodatek)</h3>
+          <p class="meta">Pakiet zabezpieczeń najwyższej klasy.</p>
+          <div class="price-row">
+            <div class="price"><span class="cur">PLN</span> <span>459</span></div>
+            <div class="per">netto / użytk. / rok</div>
+          </div>
+          <ul>
+            <li>Entra ID P2</li>
+            <li>Defender for Identity</li>
+            <li>Defender for Office P2</li>
+            <li>Defender for Endpoint P2</li>
+            <li>Defender for Cloud Apps</li>
+            <li>P:N: CFQ7TTC0LCHC:001J</li>
+          </ul>
+        </div>
+
+        <div class="card svc glass">
+          <h3 class="name">Microsoft Purview Suite for Microsoft 365 Business Premium (dodatek)</h3>
+          <p class="meta">Pakiet ochrony danych najwyższej klasy.</p>
+          <div class="price-row">
+            <div class="price"><span class="cur">PLN</span> <span>459</span></div>
+            <div class="per">netto / użytk. / rok</div>
+          </div>
+          <ul>
+            <li>Information protection</li>
+            <li>DLP (Data Loss Prevention)</li>
+            <li>Data lifecycle management</li>
+            <li>Insider Risk Management</li>
+            <li>eDiscovery &amp; Audit (Premium)</li>
+            <li><b>P/N:</b> CFQ7TTC0LCHC:001H</li>
+          </ul>
+        </div>
+
+        <div class="card svc glass">
+          <h3 class="name">Microsoft Defender and Purview Suites for Microsoft 365 Business Premium (dodatek)</h3>
+          <p class="meta">Ochrona i compliance w jednym.</p>
+          <div class="price-row">
+            <div class="price"><span class="cur">PLN</span> <span>689</span></div>
+            <div class="per">netto / użytk. / rok</div>
+          </div>
+          <ul>
+            <li>Ograniczasz ryzyko </li>
+            <li>Blokujesz wycieki danych</li>
+            <li>Wiesz, kto ma dostęp do danych</li>
+            <li>AI działa zgodnie z zasadami</li>
+            <li>Jedno rozwiązanie zamiast wielu</li>
+            <li><b>P/N:</b> CFQ7TTC0LCHC:001G</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>FAQ – krótko i konkretnie</h2>
+          <p class="intro">Najczęstsze pytania przed zakupem licencji CSP i startem wdrożenia.</p>
+        </div>
+        <hr class="divider" />
+
+        <div class="grid faq">
+
+  <div class="card qa glass">
+    <p class="q">Czy Copilot Business to osobna licencja?</p>
+    <p class="a">Nie – to dodatek do Microsoft 365 (Basic, Standard lub Premium). Dokładasz go do istniejących użytkowników.</p>
+  </div>
+
+  <div class="card qa glass">
+    <p class="q">Dla jakiej wielkości firmy to działa?</p>
+    <p class="a">Copilot Business jest przeznaczony dla firm do 300 użytkowników (segment MŚP).</p>
+  </div>
+
+  <div class="card qa glass">
+    <p class="q">Czy mogę kupić tylko dla części zespołu?</p>
+    <p class="a">Tak – licencje dobierasz do ról (np. sprzedaż, zarząd, back‑office). Resztę możesz dołożyć później.</p>
+  </div>
+
+  <div class="card qa glass">
+    <p class="q">Czy Copilot widzi wszystkie dane w firmie?</p>
+    <p class="a">Nie – działa w ramach uprawnień Microsoft 365. Widzi tylko to, do czego użytkownik ma dostęp.</p>
+  </div>
+
+  <div class="card qa glass">
+    <p class="q">Czy dane z Copilota trafiają poza firmę?</p>
+    <p class="a">Nie – Copilot działa na danych w Twoim Microsoft 365 i respektuje polityki bezpieczeństwa i compliance.</p>
+  </div>
+
+  <div class="card qa glass">
+    <p class="q">Po co mi Defender i Purview?</p>
+    <p class="a">Copilot przyspiesza pracę. Defender i Purview pilnują, żeby dane i dostęp były bezpieczne.</p>
+  </div>
+
+  <div class="card qa glass">
+    <p class="q">Ile trwa uruchomienie?</p>
+    <p class="a">Najczęściej kilka dni: licencje → szybki pilot → pierwsze efekty w pracy zespołu.</p>
+  </div>
+
+  <div class="card qa glass">
+    <p class="q">Czy ceny na stronie są ostateczne?</p>
+    <p class="a">Nie – podajemy ceny „od”. Finalna wycena zależy od liczby użytkowników i konfiguracji.</p>
+  </div>
+
+</div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT (big) -->
+    <section class="contact-section" id="kontakt">
+      <div class="wrap">
+     <div class="contact-grid">
+            <div class="card glass contact-card">
+                <h2>Kontakt</h2>
+                <p>
+                Najszybciej: umów 15 min albo kiknij w gotowy e-mail. Działamy bez formularzy. Odpowiadamy konkretnie:
+                rekomendowany wariant, liczba licencji i cena w PLN.
+                </p>
+
+                        <div class="contact-actions">
+                        <a class="btn btn-primary" target="_blank" rel="noopener"
+                            href="https://bookings.cloud.microsoft/book/RedFlag1@redflag.com.pl">Umów 15 min</a>
+
+                        <a class="btn btn-ghost btn-with-sub"
+                            href="mailto:msp@valcreon.com?subject=Microsoft%20365%20Copilot%20Business%20%E2%80%94%20wycena%20CSP&body=Dzie%C5%84%20dobry%2C%0A%0AProsz%C4%99%20o%20informacj%C4%99%20o%20licencji%20Microsoft%20365%20Copilot%20Business.%0A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%0APlan%20bazowy%20M365%3A%0A%0AFirma%3A%0ANIP%3A%0A%0AZ%20g%C3%B3ry%20dzi%C4%99kuj%C4%99">
+                            <span>Napisz e‑mail</span>
+                            <span class="btn-sub">1 klik • e‑mail</span>
+                        </a>
+
+                        <a class="btn btn-ghost" href="tel:+48221525060">+48 22 152 50 60</a>
+                        </div>
+
+                <!-- ✅ TU: poprawny wariant A -->
+                <div class="company brandline" aria-label="Dane firmy">
+                <img class="company-logo" src="logo-300.png" alt="Valcreon" loading="lazy">
+                <div class="company-text">
+                    <div class="company-name">Valcreon Sp. z o.o.</div>
+                    <div class="company-addr">Plac Europejski 2, 00‑844 Warszawa</div>
+                </div>
+                </div>
+
+                <div class="footnotes">
+                <div><b>☑️</b> Umów 15 min ‑ prowadzi do rezerwacji terminu w naszym kalendarzu.</div>
+                <div><b>☑️</b> Link e‑mail zawiera gotową treść e-mail, aby od razu wysłać wiadomość.</div>
+                <div><b>☑️</b> Telefon ‑ jeśli chcesz omówić Copilot od razu, na gorąco.</div>
+                </div>
+            </div>
+
+            <!-- ✅ MAPA MUSI BYĆ drugim dzieckiem contact-grid -->
+            <div class="map card">
+                <iframe
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Plac%20Europejski%202%2000-844%20Warszawa&output=embed"
+                title="Mapa ‑ Valcreon Sp. z o.o., Plac Europejski 2, Warszawa"></iframe>
+            </div>
+            
+      </div>
+    </section>
+
+<footer class="footer-saas">
+  <div class="wrap footer-grid">
+
+    <!-- Lewa strona -->
+    <div class="footer-brand">
+      <div class="brandline">
+        <img src="logo-32.png" alt="Valcreon" class="footer-logo">
+        <span class="brand-name">Valcreon</span>
+      </div>
+
+      <p class="footer-desc">
+        Microsoft 365 Copilot dla firm – licencje CSP i wdrożenia dla MŚP.
+      </p>
+    </div>
+
+    <!-- Linki -->
+    <div class="footer-links">
+      <div class="col">
+        <span class="col-title">Produkt</span>
+        <a href="#how">AI w firmie</a>
+        <a href="#options">Promocje</a>
+        <a href="#additional-services">Dodatki</a>
+      </div>
+
+      <div class="col">
+        <span class="col-title">Firma</span>
+        <a href="#deploy">Jak wdrażamy</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+
+      <div class="col">
+        <span class="col-title">Kontakt</span>
+        <a href="mailto:msp@valcreon.com">E-mail</a>
+        <a href="tel:+48221525060">Telefon</a>
+        <a target="_blank" href="https://bookings.cloud.microsoft/book/RedFlag1@redflag.com.pl">
+          Umów rozmowę
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+        <!-- Sub stopka -->
+
+<div class="footer-bottom">
+  <span>© <span id="current-year"></span></span>
+
+  <a
+    href="https://valcreon.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="footer-link-clean"
+  >
+    Valcreon.com
+  </a>
+</div>
+
+        </footer>
+
+
+  </main>
+
+  <script>
+    // Minimal helper: wypełnia karty z data-*
+    document.querySelectorAll('.pricing-card').forEach(card=>{
+      const now = card.getAttribute('data-now') || 'X';
+      const was = card.getAttribute('data-was') || 'Y';
+      const off = card.getAttribute('data-off') || '';
+      const cur = card.getAttribute('data-currency') || 'PLN';
+
+      card.querySelectorAll('.cur').forEach(el=>el.textContent = cur);
+      const nowEl = card.querySelector('.js-now'); if(nowEl) nowEl.textContent = now;
+      const wasEl = card.querySelector('.js-was'); if(wasEl) wasEl.textContent = was;
+      const offEl = card.querySelector('.js-off'); if(offEl && off) offEl.textContent = off;
+    });
+
+
+    
+  (function(){
+    const root = document.querySelector('#difference-toggle');
+    if(!root) return;
+
+    const tabCopilot = root.querySelector('#tab-copilot');
+    const tabChat = root.querySelector('#tab-chat');
+    const panelCopilot = root.querySelector('#panel-copilot');
+    const panelChat = root.querySelector('#panel-chat');
+    const indicator = root.querySelector('.t-indicator');
+    const badgeCopilot = root.querySelector('[data-badge="copilot"]');
+    const badgeChat = root.querySelector('[data-badge="chat"]');
+
+    function setView(view){
+      const isCopilot = view === 'copilot';
+
+      tabCopilot.classList.toggle('is-active', isCopilot);
+      tabChat.classList.toggle('is-active', !isCopilot);
+
+      tabCopilot.setAttribute('aria-selected', String(isCopilot));
+      tabChat.setAttribute('aria-selected', String(!isCopilot));
+
+      // indicator slide
+      indicator.style.transform = isCopilot ? 'translateX(0%)' : 'translateX(100%)';
+
+      // panels
+      panelCopilot.hidden = !isCopilot;
+      panelChat.hidden = isCopilot;
+
+      panelCopilot.classList.toggle('is-show', isCopilot);
+      panelChat.classList.toggle('is-show', !isCopilot);
+
+      // badges
+      badgeCopilot.hidden = !isCopilot;
+      badgeChat.hidden = isCopilot;
+    }
+
+    tabCopilot.addEventListener('click', ()=>setView('copilot'));
+    tabChat.addEventListener('click', ()=>setView('chat'));
+
+    // keyboard support
+    root.querySelectorAll('.tbtn').forEach(btn=>{
+      btn.addEventListener('keydown', (e)=>{
+        if(e.key === 'ArrowLeft' || e.key === 'ArrowRight'){
+          e.preventDefault();
+          setView(e.key === 'ArrowLeft' ? 'copilot' : 'chat');
+          (e.key === 'ArrowLeft' ? tabCopilot : tabChat).focus();
+        }
+      });
+    });
+
+    // init
+    setView('copilot');
+  })();
+
+
+  
+  (function(){
+    const root = document.querySelector('#difference-toggle-v2');
+    if(!root) return;
+
+    const shell = root.querySelector('.v2-shell');
+    const tabCopilot = root.querySelector('#v2-tab-copilot');
+    const tabChat = root.querySelector('#v2-tab-chat');
+    const panelCopilot = root.querySelector('#v2-panel-copilot');
+    const panelChat = root.querySelector('#v2-panel-chat');
+    const indicator = root.querySelector('.v2-indicator');
+    const badgeCopilot = root.querySelector('[data-badge="copilot"]');
+    const badgeChat = root.querySelector('[data-badge="chat"]');
+
+    function setView(view){
+      const isCopilot = view === 'copilot';
+
+      // active tabs
+      tabCopilot.classList.toggle('is-active', isCopilot);
+      tabChat.classList.toggle('is-active', !isCopilot);
+
+      tabCopilot.setAttribute('aria-selected', String(isCopilot));
+      tabChat.setAttribute('aria-selected', String(!isCopilot));
+
+      // indicator slide
+      indicator.style.transform = isCopilot ? 'translateX(0%)' : 'translateX(100%)';
+
+      // panels swap
+      panelCopilot.hidden = !isCopilot;
+      panelChat.hidden = isCopilot;
+
+      panelCopilot.classList.toggle('is-show', isCopilot);
+      panelChat.classList.toggle('is-show', !isCopilot);
+
+      // badges
+      badgeCopilot.hidden = !isCopilot;
+      badgeChat.hidden = isCopilot;
+
+      // glow state
+      shell.setAttribute('data-view', isCopilot ? 'copilot' : 'chat');
+    }
+
+    tabCopilot.addEventListener('click', ()=>setView('copilot'));
+    tabChat.addEventListener('click', ()=>setView('chat'));
+
+    // keyboard support
+    [tabCopilot, tabChat].forEach(btn=>{
+      btn.addEventListener('keydown', (e)=>{
+        if(e.key === 'ArrowLeft' || e.key === 'ArrowRight'){
+          e.preventDefault();
+          const next = (e.key === 'ArrowLeft') ? 'copilot' : 'chat';
+          setView(next);
+          (next === 'copilot' ? tabCopilot : tabChat).focus();
+        }
+      });
+    });
+
+    // init
+    setView('copilot');
+  })();
+
+
+  
+  (function(){
+    const btn = document.querySelector('.menu-btn');
+    const drawer = document.querySelector('#mobile-drawer');
+    const overlay = document.querySelector('.drawer-overlay');
+    const closeBtn = document.querySelector('.drawer-close');
+    if(!btn || !drawer || !overlay || !closeBtn) return;
+
+    function openMenu(){
+      overlay.hidden = false;
+      drawer.hidden = false;
+      requestAnimationFrame(() => drawer.classList.add('is-open'));
+      btn.setAttribute('aria-expanded','true');
+      document.body.classList.add('no-scroll');
+      closeBtn.focus();
+    }
+
+    function closeMenu(){
+      drawer.classList.remove('is-open');
+      btn.setAttribute('aria-expanded','false');
+      document.body.classList.remove('no-scroll');
+      setTimeout(() => {
+        drawer.hidden = true;
+        overlay.hidden = true;
+        btn.focus();
+      }, 220);
+    }
+
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      expanded ? closeMenu() : openMenu();
+    });
+
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') closeMenu();
+    });
+
+    drawer.querySelectorAll('a.drawer-link').forEach(a => {
+      a.addEventListener('click', () => closeMenu());
+    });
+  })();
+
+
+    
+  const currentYearEl = document.getElementById("current-year");
+  if (currentYearEl) {
+    currentYearEl.textContent = new Date().getFullYear();
+  }
+
+
+  </script>
+</body>
+</html>
